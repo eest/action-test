@@ -19,4 +19,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
-        run: curl -i -L -s -u username:foobar https://api.github.com/repos/ko-build/ko/releases/latest
+        run: curl -i -L -s -u "username:${{ github.token }}" https://api.github.com/repos/ko-build/ko/releases/latest
